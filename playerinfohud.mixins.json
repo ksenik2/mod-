@@ -1,0 +1,13 @@
+{
+	"required": false,
+	"minVersion": "0.8",
+	"package": "dev.playerinfohud.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"injectors": {
+		"defaultRequire": 0
+	},
+	"client": [
+		"SkyRendererMixin",
+		"FogRendererMixin"
+	]
+}

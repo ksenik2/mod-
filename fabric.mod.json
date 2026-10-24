@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "playerinfohud",
+	"version": "${version}",
+	"name": "Player Info HUD",
+	"description": "Niebieski panel z info o graczu na celowniku, ESP tylko dla widocznych graczy i modulacja nieba. Ustawienia w Mod Menu.",
+	"authors": [],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.playerinfohud.PlayerInfoHudClient"
+		],
+		"modmenu": [
+			"dev.playerinfohud.PlayerInfoHudModMenu"
+		]
+	},
+	"mixins": [
+		"playerinfohud.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": ">=26.3 <26.4",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
